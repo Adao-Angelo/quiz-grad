@@ -1,0 +1,56 @@
+@import url(../global.css);
+
+.header {
+  padding: 29px 30px;
+}
+.content-nemu {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--gray-100);
+  align-self: center;
+}
+.content-nemu .menu {
+  display: flex;
+  gap: 23px;
+  align-items: center;
+}
+.open-login-button {
+  border: 1px solid var(--yellow);
+  color: var(--yellow);
+  padding: 5px 20px;
+  font-weight: 500;
+}
+.content {
+  display: flex;
+  align-items: center;
+  padding: 0 103px;
+  justify-content: space-between;
+}
+.content .text-arr h1 {
+  font-size: 40px;
+  font-weight: 500;
+  width: 290px;
+}
+.content .text-arr p {
+  margin-top: 32px;
+  margin-bottom: 40px;
+  padding: 9px;
+  border-left: 1.16px solid var(--black);
+  color: var(--gray-200);
+}
+.start-solving {
+  background-color: var(--yellow);
+  color: var(--white);
+  padding: 9px 16px;
+  border: none;
+  font-size: 16px;
+  box-shadow: 0px 20px 20px 2px var(--yellow-shadow);
+}
+.know-more {
+  color: var(--yellow);
+  background-color: var(--white);
+  padding: 9px 16px;
+  border: none;
+  font-size: 16px;
+}
