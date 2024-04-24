@@ -3,7 +3,7 @@
   color: var(--yellow);
 }
 .questionQuantities {
-  display: none;
+  padding: 1rem;
 }
 .question {
   font-size: 30px;
@@ -26,6 +26,22 @@
   width: 290px;
   border-left: 4px solid var(--yellow);
   transition: 0.5s;
+}
+.answers p.green {
+  background-color: green;
+  color: var(--white);
+  border-left: 4px solid green;
+}
+.answers p.red {
+  background-color: red;
+  color: var(--white);
+  border-left: 4px solid red;
+}
+.answers p.red:hover {
+  background-color: red;
+}
+.answers p.green:hover {
+  background-color: green;
 }
 .answers p:hover {
   background-color: var(--yellow);
@@ -83,17 +99,28 @@
   background-color: #0000007a;
   position: fixed;
   top: 0;
+  transition: 0.2s;
+  visibility: hidden;
+  opacity: 0;
+}
+.alert-modal.show {
+  visibility: visible;
+  opacity: 1;
 }
 .alert-modal .modal {
   background: var(--white);
   width: 500px;
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
   padding: 20px;
-  border-radius: 12px;
+  transition: 0.5s;
+  border-radius: 5px;
+}
+.alert-modal.show .modal {
+  top: 50%;
 }
 .alert-modal .modal h1 {
   margin-top: 12px;

@@ -14,6 +14,6 @@ setInterval(() => {
     TimeGame--;
     widthTime -= 1.67;
   } else {
-    // finish();
+    finish();
   }
 }, 1000);

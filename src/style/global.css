@@ -29,3 +29,10 @@ a {
   display: block;
   color: var(--gray-200);
 }
+
+.green {
+  background-color: #3eaa3e;
+}
+.red {
+  background-color: #c54848;
+}
