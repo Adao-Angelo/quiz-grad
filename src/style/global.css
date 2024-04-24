@@ -14,12 +14,18 @@
   --gray-100: #e0e0e0;
   --gray-200: #828282;
   --black: #333333;
-  --yellow-shadow: #acbd6a6c;
+  --yellow-shadow: #c1c42898;
 }
 
+p {
+  color: var(--gray-200);
+}
+button {
+  cursor: pointer;
+}
 a {
   text-decoration: none;
   font-weight: 400;
   display: block;
-  color: var(--gray-100);
+  color: var(--gray-200);
 }

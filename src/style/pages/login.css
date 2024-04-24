@@ -1,1 +1,64 @@
 @import url(../global.css);
+
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container section {
+  width: 50%;
+  height: 100vh;
+  padding: 38px;
+}
+.container .content-data {
+  text-align: center;
+}
+.content-data img {
+  display: block;
+
+  margin: auto;
+  margin-top: 80px;
+  margin-bottom: 40px;
+}
+form {
+  width: 400px;
+  margin: auto;
+}
+form input {
+  padding: 12px;
+  width: 100%;
+  border: none;
+  border-left: 2px solid var(--yellow);
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.content-btns .signin {
+  background-color: var(--yellow);
+  color: var(--white);
+  padding: 9px 16px;
+  border: none;
+  font-size: 16px;
+  box-shadow: 0px 5px 30px 2px var(--yellow-shadow);
+  margin-right: 10px;
+}
+.content-btns .signup {
+  color: var(--yellow);
+  background-color: var(--white);
+  padding: 9px 16px;
+  border: none;
+  border: 1px solid var(--yellow);
+  font-size: 16px;
+  margin-left: 10px;
+}
+
+.container .content-image {
+  background-image: linear-gradient(280deg, #e6e6e6, var(--gray-100));
+  position: relative;
+}
+.container .content-image img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

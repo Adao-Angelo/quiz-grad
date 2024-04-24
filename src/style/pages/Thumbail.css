@@ -3,6 +3,9 @@
 .header {
   padding: 29px 30px;
 }
+.logo2 {
+  width: 150px;
+}
 .content-nemu {
   display: flex;
   justify-content: space-between;
@@ -45,7 +48,7 @@
   padding: 9px 16px;
   border: none;
   font-size: 16px;
-  box-shadow: 0px 20px 20px 2px var(--yellow-shadow);
+  box-shadow: 0px 5px 30px 2px var(--yellow-shadow);
 }
 .know-more {
   color: var(--yellow);
