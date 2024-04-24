@@ -55,7 +55,7 @@ function LoadingQuestion() {
 
 LoadingQuestion();
 
-function finish() {
+export function finish() {
   setCookie("score", QuestionCurrects, 1);
   window.location = "./scorePage.html";
 }

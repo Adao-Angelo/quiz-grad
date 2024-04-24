@@ -1,4 +1,6 @@
+import { finish } from "../pages/quizStarted.js";
 const time = document.querySelector(".time");
+
 const timeValure = document.querySelector(".time-value");
 
 let TimeGame = 60;
@@ -12,6 +14,6 @@ setInterval(() => {
     TimeGame--;
     widthTime -= 1.67;
   } else {
-    window.location = "./scorePage.html";
+    // finish();
   }
 }, 1000);
