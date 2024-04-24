@@ -1,0 +1,38 @@
+@import url(../global.css);
+
+.container {
+  width: 100%;
+  height: 100vh;
+}
+.container .content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  height: 400px;
+  background-image: url(../assets/scoor.svg);
+
+  background-size: cover;
+}
+
+.data-score {
+  text-align: center;
+  position: absolute;
+  color: var(--white);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.data-score h1 {
+  font-size: 150px;
+}
+.complete {
+  background-color: var(--white);
+  color: var(--yellow);
+  padding: 9px 16px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  box-shadow: 0px 5px 30px 2px var(--yellow-shadow);
+}

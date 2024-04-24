@@ -2,9 +2,18 @@ const question = document.querySelector(".question");
 const answers = document.querySelector(".answers");
 const content = document.querySelector(".content");
 const questionQuantities = document.querySelector(".questionQuantities");
+const nextBtn = document.querySelector(".next");
+
+const logout = document.querySelector(".logout");
+const playerName = document.querySelector(".player-name");
 
 import { Question } from "../DB/Question.js";
+import { getCookie } from "../utils/getCookies.js";
+import { setCookie } from "../utils/setCookies.js";
 import "../utils/timeControll.js";
+
+const player = getCookie("player");
+playerName.innerHTML = player;
 
 let currentIndex = 0;
 let QuestionCurrects = 0;
@@ -47,5 +56,16 @@ function LoadingQuestion() {
 LoadingQuestion();
 
 function finish() {
-  se;
+  setCookie("score", QuestionCurrects, 1);
+  window.location = "./scorePage.html";
 }
+
+nextBtn.addEventListener("click", next);
+function next() {
+  currentIndex++;
+  LoadingQuestion();
+}
+
+logout.addEventListener("click", () => {
+  window.location = "./login.html";
+});

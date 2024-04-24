@@ -38,6 +38,7 @@ form input {
   color: var(--white);
   padding: 9px 16px;
   border: none;
+  width: 100%;
   font-size: 16px;
   box-shadow: 0px 5px 30px 2px var(--yellow-shadow);
   margin-right: 10px;

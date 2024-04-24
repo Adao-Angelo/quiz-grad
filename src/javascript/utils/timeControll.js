@@ -12,5 +12,6 @@ setInterval(() => {
     TimeGame--;
     widthTime -= 1.67;
   } else {
+    window.location = "./scorePage.html";
   }
 }, 1000);
