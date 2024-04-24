@@ -91,3 +91,5 @@ oklogout.addEventListener("click", () => {
   setCookie("player", "", 1);
   window.location = "./Thumbnail.html";
 });
+
+function removeEvent() {}
