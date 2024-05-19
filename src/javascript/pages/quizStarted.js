@@ -39,7 +39,7 @@ function NextQuestion(e) {
     } else {
       finish();
     }
-  }, 1000);
+  }, 200);
 }
 
 function LoadingQuestion() {
