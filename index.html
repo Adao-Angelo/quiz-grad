@@ -1,11 +1,321 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Quiz - Grad</title>
+    <title>🚀 Quiz Espacial - Semana do Espaço 2025 🌌</title>
+    <meta
+      name="description"
+      content="Explore o universo com nosso Quiz Espacial interativo! Celebre a Semana Mundial do Espaço descobrindo os mistérios das estrelas, planetas e galáxias."
+    />
+    <link rel="stylesheet" href="./src/style/global.css" />
+    <link rel="stylesheet" href="./landing-page.css" />
+    <link
+      rel="shortcut icon"
+      href="./src/style/assets/Hands Graduate.svg"
+      type="image/x-icon"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <script type="module" src="./src/main.js"></script>
+    <!-- Header -->
+    <header class="landing-header">
+      <nav class="navbar">
+        <div class="nav-container">
+          <div class="logo-container">
+            <img
+              src="./src/style/assets/logo2.svg"
+              alt="Quiz Espacial Logo"
+              class="logo"
+            />
+            <span class="logo-text">Quiz Espacial</span>
+          </div>
+          <div class="nav-menu">
+            <a href="#sobre" class="nav-link">Sobre</a>
+            <a href="#semana-espacial" class="nav-link">Semana do Espaço</a>
+            <a href="#quiz" class="nav-link">Quiz</a>
+            <a href="./src/pages/Thumbnail.html" class="cta-button"
+              >🚀 Começar Exploração</a
+            >
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-background">
+        <div class="stars"></div>
+        <div class="planets">
+          <div class="planet planet-1"></div>
+          <div class="planet planet-2"></div>
+          <div class="planet planet-3"></div>
+        </div>
+      </div>
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1 class="hero-title">
+            <span class="gradient-text">Explore o Universo</span>
+            <br />com o Quiz Espacial
+          </h1>
+          <p class="hero-subtitle">
+            Descubra os mistérios do cosmos através de perguntas fascinantes
+            sobre planetas, estrelas, galáxias e a exploração espacial. Uma
+            jornada educativa pelo infinito!
+          </p>
+          <div class="hero-stats">
+            <div class="stat">
+              <span class="stat-number">15+</span>
+              <span class="stat-label">Perguntas</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">4</span>
+              <span class="stat-label">Alternativas</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">∞</span>
+              <span class="stat-label">Aprendizado</span>
+            </div>
+          </div>
+          <div class="hero-buttons">
+            <a href="./src/pages/login.html" class="btn-primary">
+              🌟 Iniciar Quiz Agora
+            </a>
+            <a href="#sobre" class="btn-secondary"> 📖 Saber Mais </a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <div class="astronaut-container">
+            <img
+              src="./src/style/assets/people.svg"
+              alt="Astronauta Explorando"
+              class="astronaut"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Semana do Espaço Section -->
+    <section id="semana-espacial" class="space-week">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">🌌 Semana Mundial do Espaço 2025</h2>
+          <p class="section-subtitle">
+            De 4 a 10 de outubro, celebramos os avanços na ciência e tecnologia
+            espacial
+          </p>
+        </div>
+
+        <div class="space-week-content">
+          <div class="week-info">
+            <div class="week-card">
+              <div class="card-icon">🚀</div>
+              <h3>O que é?</h3>
+              <p>
+                A Semana Mundial do Espaço é a maior celebração espacial anual
+                do mundo, reconhecida pela ONU para inspirar estudantes e
+                mostrar o apoio público à exploração espacial.
+              </p>
+            </div>
+
+            <div class="week-card">
+              <div class="card-icon">🌍</div>
+              <h3>Impacto Global</h3>
+              <p>
+                Mais de 95 países participam com milhares de eventos educativos,
+                inspirando a próxima geração de exploradores espaciais e
+                cientistas.
+              </p>
+            </div>
+
+            <div class="week-card">
+              <div class="card-icon">🔬</div>
+              <h3>Educação</h3>
+              <p>
+                Promove a educação STEM (Ciência, Tecnologia, Engenharia e
+                Matemática) através de atividades práticas e conteúdo educativo
+                sobre o espaço.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline">
+            <h3>Marcos Históricos do Espaço</h3>
+            <div class="timeline-item">
+              <div class="timeline-date">1957</div>
+              <div class="timeline-content">
+                <h4>Sputnik 1</h4>
+                <p>Primeiro satélite artificial lançado pela União Soviética</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-date">1969</div>
+              <div class="timeline-content">
+                <h4>Apollo 11</h4>
+                <p>Neil Armstrong torna-se o primeiro humano a pisar na Lua</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-date">1990</div>
+              <div class="timeline-content">
+                <h4>Telescópio Hubble</h4>
+                <p>
+                  Lançamento do observatório espacial que revolucionou a
+                  astronomia
+                </p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-date">2021</div>
+              <div class="timeline-content">
+                <h4>Telescópio James Webb</h4>
+                <p>O mais avançado telescópio espacial já construído</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sobre o Quiz Section -->
+    <section id="sobre" class="about-quiz">
+      <div class="container">
+        <div class="about-content">
+          <div class="about-text">
+            <h2 class="section-title">🎯 Sobre o Quiz Espacial</h2>
+            <p class="about-description">
+              Nosso Quiz Espacial foi desenvolvido especialmente para a Semana
+              Mundial do Espaço, oferecendo uma experiência educativa e
+              divertida sobre astronomia e exploração espacial.
+            </p>
+
+            <div class="features-grid">
+              <div class="feature">
+                <div class="feature-icon">🎲</div>
+                <h3>Perguntas Aleatórias</h3>
+                <p>Cada sessão é única com perguntas randomizadas</p>
+              </div>
+
+              <div class="feature">
+                <div class="feature-icon">🔊</div>
+                <h3>Feedback Sonoro</h3>
+                <p>Sons especiais para respostas corretas e incorretas</p>
+              </div>
+
+              <div class="feature">
+                <div class="feature-icon">🌙</div>
+                <h3>Tema Espacial</h3>
+                <p>Interface escura com cores neon espaciais</p>
+              </div>
+
+              <div class="feature">
+                <div class="feature-icon">📱</div>
+                <h3>Responsivo</h3>
+                <p>Funciona perfeitamente em todos os dispositivos</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-image">
+            <div class="solar-system">
+              <div class="sun"></div>
+              <div class="orbit orbit-1">
+                <div class="planet-small mercury"></div>
+              </div>
+              <div class="orbit orbit-2">
+                <div class="planet-small venus"></div>
+              </div>
+              <div class="orbit orbit-3">
+                <div class="planet-small earth"></div>
+              </div>
+              <div class="orbit orbit-4">
+                <div class="planet-small mars"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quiz Preview Section -->
+    <section id="quiz" class="quiz-preview">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">🎮 Experimente o Quiz</h2>
+          <p class="section-subtitle">
+            Teste seus conhecimentos sobre o universo com perguntas fascinantes
+          </p>
+        </div>
+
+        <div class="quiz-demo">
+          <div class="demo-question">
+            <h3>Exemplo de Pergunta:</h3>
+            <div class="question-card">
+              <p class="question-text">Qual é o planeta mais próximo do Sol?</p>
+              <div class="demo-answers">
+                <div class="demo-answer">A) Vênus</div>
+                <div class="demo-answer correct">B) Mercúrio ✓</div>
+                <div class="demo-answer">C) Terra</div>
+                <div class="demo-answer">D) Marte</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="quiz-stats">
+            <div class="stat-card">
+              <h4>Temas Abordados</h4>
+              <ul>
+                <li>🪐 Sistema Solar</li>
+                <li>⭐ Estrelas e Galáxias</li>
+                <li>🚀 Exploração Espacial</li>
+                <li>🌙 Astronomia Geral</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="final-cta">
+          <h3>Pronto para a Aventura Espacial?</h3>
+          <p>
+            Junte-se a milhares de exploradores espaciais e teste seus
+            conhecimentos!
+          </p>
+          <a href="./src/pages/login.html" class="btn-primary large">
+            🚀 Começar Quiz Espacial Agora
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h4>Quiz Espacial</h4>
+            <p>Explorando o universo através da educação</p>
+          </div>
+          <div class="footer-section">
+            <h4>Semana do Espaço</h4>
+            <p>4-10 de Outubro de 2025</p>
+          </div>
+          <div class="footer-section">
+            <h4>Desenvolvido com 💙</h4>
+            <p>Para inspirar a próxima geração de exploradores</p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>
+            &copy; 2025 Quiz Espacial. Feito para a Semana Mundial do Espaço.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./landing-page.js"></script>
   </body>
 </html>

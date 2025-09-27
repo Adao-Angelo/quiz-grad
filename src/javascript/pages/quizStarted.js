@@ -1,5 +1,5 @@
 const question = document.querySelector(".question");
-const answers = document.querySelector(".answers");
+const answers = document.querySelector(".answers-grid");
 const alertModal = document.querySelector(".alert-modal");
 const content = document.querySelector(".content");
 const questionQuantities = document.querySelector(".questionQuantities");
@@ -19,6 +19,13 @@ import "../utils/timeControll.js";
 const player = getCookie("player");
 playerName.innerHTML = player;
 
+// Randomizar perguntas
+const shuffledQuestions = [...Question].sort(() => Math.random() - 0.5);
+
+// Sons de correto e errado
+const correctSound = new Audio("../../../correct-answer.mp3");
+const errorSound = new Audio("../../../error.mp3");
+
 let currentIndex = 0;
 let QuestionCurrects = 0;
 
@@ -28,27 +35,42 @@ function NextQuestion(e) {
   if (e.target.getAttribute("data-currect") == "true") {
     QuestionCurrects++;
     e.target.setAttribute("class", "green");
+    // Tocar som de resposta correta
+    correctSound
+      .play()
+      .catch((error) => console.log("Erro ao tocar som correto:", error));
   } else {
     e.target.setAttribute("class", "red");
+    // Tocar som de resposta errada
+    errorSound
+      .play()
+      .catch((error) => console.log("Erro ao tocar som erro:", error));
   }
 
   setTimeout(() => {
-    if (currentIndex < Question.length - 1) {
+    if (currentIndex < shuffledQuestions.length - 1) {
       currentIndex++;
       LoadingQuestion();
     } else {
       finish();
     }
-  }, 200);
+  }, 1000);
 }
 
 function LoadingQuestion() {
-  questionQuantities.innerHTML = `${currentIndex}/${Question.length}`;
-  const item = Question[currentIndex];
+  questionQuantities.innerHTML = `${currentIndex + 1}/${
+    shuffledQuestions.length
+  }`;
+  const item = shuffledQuestions[currentIndex];
   answers.innerHTML = "";
   question.innerHTML = item.question;
-  item.answers.forEach((answer) => {
+
+  // Randomizar as alternativas também
+  const shuffledAnswers = [...item.answers].sort(() => Math.random() - 0.5);
+
+  shuffledAnswers.forEach((answer) => {
     const div = document.createElement("div");
+    div.className = "answer-option";
 
     div.innerHTML = `
     <p class="opc" data-currect="${answer.currect}">${answer.option}</p>
@@ -59,7 +81,13 @@ function LoadingQuestion() {
 
   const opcs = document.querySelectorAll(".opc");
   opcs.forEach((item) => {
+    // Resetar estilos
+    item.style.pointerEvents = "auto";
+    item.className = "opc";
+
     item.addEventListener("click", (e) => {
+      // Desabilitar todas as opções após clique
+      opcs.forEach((opc) => (opc.style.pointerEvents = "none"));
       NextQuestion(e);
     });
   });
@@ -74,8 +102,12 @@ export function finish() {
 
 nextBtn.addEventListener("click", next);
 function next() {
-  currentIndex++;
-  LoadingQuestion();
+  if (currentIndex < shuffledQuestions.length - 1) {
+    currentIndex++;
+    LoadingQuestion();
+  } else {
+    finish();
+  }
 }
 
 function closeAndeOpenAlertModal() {

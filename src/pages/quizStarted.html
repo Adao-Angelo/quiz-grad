@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>quizStarted</title>
+    <title>Quiz Espacial - Descubra o Universo</title>
     <link rel="stylesheet" href="../style/pages/quizStarted.css" />
     <script src="https://cdn.lordicon.com/lordicon.js"></script>
     <link
@@ -26,17 +26,32 @@
         <menu class="menu">
           <a href="#"> Home </a>
           <a href="#"> Sobre </a>
-          <a href="#" class="player-name"
-            ><i class="fa-solid fa-user"></i> Adão Angelo
+          <a href="#" class="player-info"
+            ><i class="fa-solid fa-user"></i> <span class="player-name"></span>
           </a>
         </menu>
       </div>
     </header>
-    <div class="quiz-question-content">
-      <div class="questionQuantities"></div>
-      <h1 class="question"></h1>
-    </div>
-    <div class="content answers"></div>
+    <main class="quiz-container">
+      <div class="quiz-header">
+        <div class="quiz-title">
+          <h2>🚀 Quiz Espacial - Explore o Universo! 🌌</h2>
+        </div>
+        <div class="question-info">
+          <div class="questionQuantities"></div>
+        </div>
+      </div>
+
+      <div class="quiz-content">
+        <div class="question-section">
+          <h1 class="question"></h1>
+        </div>
+
+        <div class="answers-section">
+          <div class="answers-grid"></div>
+        </div>
+      </div>
+    </main>
     <div class="config">
       <button class="logout">Terminar</button>
       <p class="time-value"></p>

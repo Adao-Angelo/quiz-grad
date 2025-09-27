@@ -1,149 +1,138 @@
 export const Question = [
   {
-    question: "Quais os tipos de energias renováveis que existem ? ",
+    question: "Qual é o planeta mais próximo do Sol?",
     answers: [
-      { option: "Quatro", currect: false },
-      { option: "Cinco", currect: false },
-      { option: "Seis", currect: true },
+      { option: "Vênus", currect: false },
+      { option: "Mercúrio", currect: true },
+      { option: "Terra", currect: false },
+      { option: "Marte", currect: false },
     ],
   },
   {
-    question: "O que são energias renováveis? ",
+    question: "Quantos planetas existem no nosso Sistema Solar?",
     answers: [
-      { option: "Recursos Naturais ", currect: true },
-      { option: "Carvão", currect: false },
-      { option: "Gás natural", currect: false },
+      { option: "7", currect: false },
+      { option: "8", currect: true },
+      { option: "9", currect: false },
+      { option: "10", currect: false },
     ],
   },
   {
-    question: "Dois exemplos de energias renováveis são:? ",
+    question: "Qual é a estrela mais próxima da Terra?",
     answers: [
-      { option: "Carvao e gãs natural ", currect: false },
-      { option: "electrica e carvão", currect: false },
-      { option: "Biomassa e solar", currect: true },
+      { option: "Alpha Centauri", currect: false },
+      { option: "Sirius", currect: false },
+      { option: "Sol", currect: true },
+      { option: "Polaris", currect: false },
     ],
   },
   {
-    question: "onde se situa a maior central fotovoltaico em Portugal? ",
+    question: "Qual é o maior planeta do Sistema Solar?",
     answers: [
-      { option: "Coimbra", currect: false },
-      { option: "Faro", currect: false },
-      { option: "Amareleja", currect: true },
+      { option: "Saturno", currect: false },
+      { option: "Neptuno", currect: false },
+      { option: "Júpiter", currect: true },
+      { option: "Urano", currect: false },
     ],
   },
   {
-    question: "Qual é uma das funções das energias renováveis?",
+    question: "Quanto tempo a luz do Sol demora a chegar à Terra?",
     answers: [
-      { option: "Evitam que se importem combustíveis fósseis ", currect: true },
-      {
-        option: "evitar custos elevados nas infra-estruturas ",
-        currect: false,
-      },
-      {
-        option: "permitir o método de combustão da biomassa limpo",
-        currect: false,
-      },
+      { option: "8 minutos", currect: true },
+      { option: "5 minutos", currect: false },
+      { option: "12 minutos", currect: false },
+      { option: "1 hora", currect: false },
     ],
   },
   {
-    question: "Eólica, Solar e Hídrica são exemplos de energia ... ",
+    question: "Qual planeta é conhecido como 'Planeta Vermelho'?",
     answers: [
-      { option: "Não reciclaves ", currect: false },
-      { option: "Renováveis", currect: true },
-      { option: "Reciclaves", currect: false },
+      { option: "Vênus", currect: false },
+      { option: "Marte", currect: true },
+      { option: "Júpiter", currect: false },
+      { option: "Saturno", currect: false },
     ],
   },
   {
-    question: "Qual o principal objetivo do Desenvolvimento Sustentável?",
+    question: "Qual é a galáxia onde está localizado o nosso Sistema Solar?",
     answers: [
-      {
-        option:
-          "Atender às necessidades das gerações futuras, sem assegurar as necessidades presentes. ",
-        currect: false,
-      },
-      {
-        option:
-          "Satisfazer as necessidades atuais, sem colocar em risco as necessidades das gerações futuras.",
-        currect: true,
-      },
-      {
-        option:
-          "Procurar responder às necessidades de hoje, sem pensar no futuro.",
-        currect: false,
-      },
+      { option: "Andrómeda", currect: false },
+      { option: "Via Láctea", currect: true },
+      { option: "Triangulum", currect: false },
+      { option: "Centaurus A", currect: false },
+    ],
+  },
+  {
+    question: "Qual foi o primeiro homem a pisar na Lua?",
+    answers: [
+      { option: "Buzz Aldrin", currect: false },
+      { option: "Yuri Gagarin", currect: false },
+      { option: "Neil Armstrong", currect: true },
+      { option: "John Glenn", currect: false },
+    ],
+  },
+  {
+    question: "Qual planeta possui os anéis mais visíveis?",
+    answers: [
+      { option: "Júpiter", currect: false },
+      { option: "Saturno", currect: true },
+      { option: "Urano", currect: false },
+      { option: "Neptuno", currect: false },
+    ],
+  },
+  {
+    question: "O que é uma supernova?",
+    answers: [
+      { option: "Nascimento de uma estrela", currect: false },
+      { option: "Explosão de uma estrela", currect: true },
+      { option: "Colisão de planetas", currect: false },
+      { option: "Formação de um buraco negro", currect: false },
+    ],
+  },
+  {
+    question: "Qual é o satélite natural da Terra?",
+    answers: [
+      { option: "Lua", currect: true },
+      { option: "Europa", currect: false },
+      { option: "Titã", currect: false },
+      { option: "Io", currect: false },
+    ],
+  },
+  {
+    question: "Quantas luas tem Júpiter aproximadamente?",
+    answers: [
+      { option: "50", currect: false },
+      { option: "60", currect: false },
+      { option: "70", currect: false },
+      { option: "79", currect: true },
+    ],
+  },
+  {
+    question: "Qual é a temperatura aproximada na superfície do Sol?",
+    answers: [
+      { option: "3.000°C", currect: false },
+      { option: "5.500°C", currect: true },
+      { option: "8.000°C", currect: false },
+      { option: "10.000°C", currect: false },
+    ],
+  },
+  {
+    question: "O que são asteroides?",
+    answers: [
+      { option: "Estrelas pequenas", currect: false },
+      { option: "Planetas em formação", currect: false },
+      { option: "Fragmentos rochosos no espaço", currect: true },
+      { option: "Luas sem planetas", currect: false },
     ],
   },
   {
     question:
-      "Qual o compromisso de redução das emissões de Dióxido de Carbono (CO2) para as cidades signatárias do Pacto de Autarcas em 2020?",
+      "Qual planeta demora mais tempo a completar uma órbita ao redor do Sol?",
     answers: [
-      { option: "40%", currect: false },
-      { option: "30%", currect: false },
-      { option: "20%", currect: true },
-    ],
-  },
-  {
-    question:
-      "4. No âmbito da Política Energética Portuguesa, particularmente do Plano Nacional de Ação para a Eficiência Energética (PNAEE 2016), as metas para 2020 de redução no consumo de energia primária na Administração Pública são de ...",
-    answers: [
-      { option: "30% ", currect: true },
-      { option: "40%", currect: false },
-      { option: "20%", currect: false },
-    ],
-  },
-  {
-    question:
-      "Para deitar fora as garrafas de plástico vazias devo utilizar o ecoponto... ",
-    answers: [
-      { option: "Azul", currect: false },
-      { option: "Verde", currect: false },
-      { option: "Amarelo", currect: true },
-    ],
-  },
-  {
-    question:
-      "Quais as temperaturas recomendadas para um ambiente confortável e não desperdiçar energia com o sistema de ar condicionado? ",
-    answers: [
-      { option: "Arrefecer a 21º e Aquecer a 25º", currect: false },
-      { option: "Arrefecer a 19º e Aquecer a 21º", currect: true },
-      { option: "Arrefecer a 15º e Aquecer a 20º", currect: false },
-    ],
-  },
-  {
-    question:
-      "Tendo em conta a etiqueta energética de um equipamento, qual a classe em que o mesmo consome menos energia?",
-    answers: [
-      { option: "A+", currect: true },
-      { option: "C", currect: false },
-      { option: "E", currect: false },
-    ],
-  },
-  {
-    question: "Qual a tecnologia de lâmpadas mais eficiente actualmente?",
-    answers: [
-      { option: "Incandescente", currect: false },
-      { option: "Fluorescente e Compacta", currect: false },
-      { option: "LED", currect: true },
-    ],
-  },
-  {
-    question: "O que significa 'eficiência energética'? ",
-    answers: [
-      {
-        option:
-          "Fazer uma utilização responsável da energia, consumindo menos energia em cada produto ou serviço que utilizamos, sem alterar o nosso estilo de vida ou sem abdicar do nosso conforto ",
-        currect: true,
-      },
-      {
-        option:
-          "Utilizar o mínimo de energia independentemente do que esta situação altere no nosso dia-a-dia",
-        currect: false,
-      },
-      {
-        option:
-          "Utilizar o mínimo de energia independentemente do que esta situação altere no nosso dia-a-dia",
-        currect: false,
-      },
+      { option: "Urano", currect: false },
+      { option: "Saturno", currect: false },
+      { option: "Júpiter", currect: false },
+      { option: "Neptuno", currect: true },
     ],
   },
 ];
